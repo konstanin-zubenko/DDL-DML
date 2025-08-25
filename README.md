@@ -73,17 +73,22 @@ unzip sakila-db.zip
 
 
 1.8.	Восстановите дамп в базу данных.
+
 ```
 source /home/cozu/sakila-db/sakila-schema.sql
 source /home/cozu/sakila-db/sakila-data.sql
 SHOW DATABASES;
 ```
- ![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/img/303.png)
+
+ ![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/img/303.png).
+
+
 1.9. При работе в IDE сформируйте ER-диаграмму получившейся базы данных. При работе в командной строке используйте команду для получения всех таблиц базы данных. (скриншот)
 ```
 SHOW TABLES;
 ```
-![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/img/304.png)
+
+![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/img/304.png).
  
 ## Задание 2
 
@@ -98,4 +103,4 @@ customer         | customer_id
 ```
 SELECT TABLE_NAME, COLUMN_NAME FROM INFORMATION_SCHEMA.key_column_usage WHERE table_schema = 'sakila' AND CONSTRAINT_NAME = 'PRIMARY';
 ```
-![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/img/306.png)
+![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/img/306.png).
