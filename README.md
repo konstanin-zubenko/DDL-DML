@@ -56,7 +56,7 @@ SELECT * FROM information_schema.user_privileges WHERE GRANTEE="'sys_temp'@'loca
 ```
 ![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/img/301.png) 
 
-```
+
 
 1.6.	Переподключитесь к базе данных от имени sys_temp.
 ```
