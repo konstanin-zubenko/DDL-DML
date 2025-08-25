@@ -74,8 +74,8 @@ unzip sakila-db.zip
 
 1.8.	Восстановите дамп в базу данных.
 ```
-source /home/eskin/sakila-db/sakila-schema.sql
-source /home/eskin/sakila-db/sakila-data.sql
+source /home/cozu/sakila-db/sakila-schema.sql
+source /home/cozu/sakila-db/sakila-data.sql
 SHOW DATABASES;
 ```
  ![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/img/303.png)
