@@ -29,31 +29,32 @@ sudo systemctl status mysql
 sudo systemctl enable mysql
 mysql -u root –p
 ```
-![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/ing/300.png)
+
 
 1.2.	Создайте учётную запись sys_temp.
 ```
 CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY 'password';
 ```
-![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/ing/301.png) 
+
 
 1.3.	Выполните запрос на получение списка пользователей в базе данных. (скриншот)
 ```
 SELECT user FROM mysql.user;
 ```
-![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/ing/302.png) 
+![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/ing/300.png)
+
 
 1.4.	Дайте все права для пользователя sys_temp.
 ```
 GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'localhost' WITH GRANT OPTION;
 ```
-![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/ing/303.png)
+
 
 1.5.	Выполните запрос на получение списка прав для пользователя sys_temp. (скриншот)
 ```
 SELECT * FROM information_schema.user_privileges WHERE GRANTEE="'sys_temp'@'localhost'";
 ```
-
+![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/ing/301.png) 
 
 ```
 
