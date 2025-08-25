@@ -41,7 +41,7 @@ CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY 'password';
 ```
 SELECT user FROM mysql.user;
 ```
-![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/ing/300.png)
+![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/img/300.png)
 
 
 1.4.	Дайте все права для пользователя sys_temp.
@@ -54,7 +54,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'localhost' WITH GRANT OPTION;
 ```
 SELECT * FROM information_schema.user_privileges WHERE GRANTEE="'sys_temp'@'localhost'";
 ```
-![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/ing/301.png) 
+![](https://github.com/konstanin-zubenko/DDL-DML/blob/main/img/301.png) 
 
 ```
 
