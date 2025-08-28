@@ -30,6 +30,7 @@ sudo systemctl enable mysql
 mysql -u root –p
 ```
 
+Если возникает проблема с поролеф пользователя root решение можно найти здесь https://stackoverflow.com/questions/37879448/mysql-fails-on-mysql-error-1524-hy000-plugin-auth-socket-is-not-loaded
 
 1.2.	Создайте учётную запись sys_temp.
 ```
